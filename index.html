@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Child9527 · 首页</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* 顶部导航栏 */
+.navbar {
+    width: 100%;
+    background: #2b2b2b;
+    border-bottom: 2px solid #4aa3ff;
+    padding: 12px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 0 12px rgba(74,163,255,0.3);
+}
+
+.navbar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    background: #4aa3ff;
+    color: #000;
+}
+
+/* Hero 区块 */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+/* 卡片区块 */
+.section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #4aa3ff;
+    box-shadow: 0 0 12px rgba(74,163,255,0.4);
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.card p {
+    color: #cccccc;
+}
+
+/* 底部 */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #888888;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 导航栏 -->
+<div class="navbar">
+    <a href="/software/">Software 软件中心</a>
+    <a href="/tvbox/">TVBox 首页</a>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+    <h1>欢迎来到 Child9527 的主页</h1>
+    <p>这里是你的软件中心、TVBox 工具集，以及更多自动化内容的入口。</p>
+</div>
+
+<!-- 内容区块 -->
+<div class="section">
+
+    <div class="card">
+        <h2>软件中心（Software）</h2>
+        <p>自动同步上游仓库最新版本，提供多镜像下载、图标展示、简介说明。</p>
+        <p>点击导航栏进入软件列表。</p>
+    </div>
+
+    <div class="card">
+        <h2>TVBox 首页</h2>
+        <p>自动生成 TVBox 配置、接口、订阅源等内容，保持最新状态。</p>
+        <p>点击导航栏进入 TVBox 页面。</p>
+    </div>
+
+    <div class="card">
+        <h2>自动化系统</h2>
+        <p>所有页面均由 GitHub Actions 自动生成与部署，无需手动维护。</p>
+        <p>targets.json 更新后自动触发同步与构建。</p>
+    </div>
+
+</div>
+
+<!-- 底部 -->
+<div class="footer">
+    © 2026 Child9527 · 自动化构建 · GitHub Pages
+</div>
+
+</body>
+</html>
