@@ -37,27 +37,27 @@ body {
     color: #000;
 }
 
-/* Hero 区块 */
+/* Hero 区块（缩小间距） */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 40px 20px; /* 原来是 80px */
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 36px; /* 稍微缩小一点 */
     color: #ffffff;
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 16px;
     color: #cccccc;
 }
 
-/* 卡片区块 */
+/* 卡片区块（缩小间距） */
 .section {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 20px auto; /* 原来是 40px */
     padding: 0 20px;
 }
 
@@ -70,9 +70,16 @@ body {
     margin-bottom: 20px;
 }
 
-.card h2 {
-    margin-top: 0;
-    color: #ffffff;
+/* 卡片标题可点击 */
+.card a {
+    color: #4aa3ff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
 }
 
 .card p {
@@ -84,7 +91,7 @@ body {
     text-align: center;
     padding: 20px;
     color: #888888;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 </style>
 </head>
@@ -107,21 +114,18 @@ body {
 <div class="section">
 
     <div class="card">
-        <h2>软件中心（Software）</h2>
-        <p>自动同步上游仓库最新版本，提供多镜像下载、图标展示、简介说明。</p>
-        <p>点击导航栏进入软件列表。</p>
+        <a href="/software/">软件中心（Software）</a>
+        <p>自动同步上游仓库最新版，提供多链接下载、图标展示、简介说明。</p>
     </div>
 
     <div class="card">
-        <h2>TVBox 首页</h2>
+        <a href="/tvbox/">TVBox 首页</a>
         <p>自动生成 TVBox 配置、接口、订阅源等内容，保持最新状态。</p>
-        <p>点击导航栏进入 TVBox 页面。</p>
     </div>
 
     <div class="card">
-        <h2>自动化系统</h2>
+        <a href="/status/">自动化系统</a>
         <p>所有页面均由 GitHub Actions 自动生成与部署，无需手动维护。</p>
-        <p>targets.json 更新后自动触发同步与构建。</p>
     </div>
 
 </div>
