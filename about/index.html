@@ -2,13 +2,19 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>一餐打不死 · 关于本站</title>
 <style>
+* { box-sizing: border-box; }
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+                 Arial, sans-serif;
     background: #1e1e1e;
     color: #e0e0e0;
+    line-height: 1.5;
 }
 
 /* 顶部导航栏 */
@@ -18,7 +24,8 @@ body {
     border-bottom: 2px solid #4aa3ff;
     padding: 12px 20px;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 12px 20px;
     align-items: center;
     box-shadow: 0 0 12px rgba(74,163,255,0.3);
 }
@@ -29,7 +36,7 @@ body {
     font-size: 16px;
     padding: 6px 10px;
     border-radius: 6px;
-    transition: 0.2s;
+    transition: background 0.2s, color 0.2s;
 }
 
 .navbar a:hover {
@@ -63,12 +70,40 @@ body {
     line-height: 1.6;
 }
 
+.card a {
+    font-weight: bold;
+    color: #ff5500;
+}
+
 /* 底部 */
 .footer {
     text-align: center;
     padding: 20px;
     color: #888888;
     margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* 移动端适配 */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 10px 12px;
+        gap: 8px 12px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    .section {
+        margin: 24px auto;
+        padding: 0 12px;
+    }
+
+    .card {
+        padding: 16px;
+    }
 }
 </style>
 </head>
@@ -93,7 +128,7 @@ body {
         本页面由 GitHub Pages 自动托管，所有页面均通过 GitHub Actions 自动构建与部署。
         本站包含软件中心、TVBox 工具集以及其他自动化内容，旨在提供稳定、持续更新的工具与资源。
     </p>
-    <div style="text-align: right; padding-right: 9.0em;">——by 一餐打不死</div>
+    <div style="text-align: right; padding-right: 1em;">——by 一餐打不死</div>
 </div>
 
     <div class="card">
@@ -118,11 +153,12 @@ body {
         </p>
     </div>
 
-        <div class="card">
+    <div class="card">
         <h2>TVbox页面</h2>
         <p>
-            自动更新影视仓App目前流行的订阅，需要下载<a href="https://pan.baidu.com/s/1g-tN9oigD0Gzh3h3IJ0JZQ?pwd=umc1" target="_blank" rel="noopener noreferrer"
-            style="font-weight: bold; color: #ff5500;">影视仓</a>使用
+            自动更新影视仓App目前流行的订阅，需要下载
+            <a href="https://pan.baidu.com/s/1g-tN9oigD0Gzh3h3IJ0JZQ?pwd=umc1" target="_blank" rel="noopener noreferrer">影视仓</a>
+            使用
         </p>
     </div>
 
